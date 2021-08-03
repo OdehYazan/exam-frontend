@@ -36,7 +36,7 @@ class AllDataAPI extends Component {
             userEmail:user.email
         })
         console.log(this.state.userEmail)
-        axios.post(`${process.env.REACT_APP_SERVER}/addToFav/:${this.state.userEmail}`,data)
+        axios.post(`${process.env.REACT_APP_SERVER}/addToFav/${this.state.userEmail}`,data)
     }
 
 
